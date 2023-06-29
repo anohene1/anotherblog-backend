@@ -8,7 +8,7 @@
     "description": "Create your blog content"
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -33,12 +33,6 @@
         "videos"
       ]
     },
-    "author": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::author.author",
-      "inversedBy": "articles"
-    },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
@@ -53,6 +47,15 @@
         "shared.rich-text",
         "shared.slider"
       ]
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "articles"
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }
