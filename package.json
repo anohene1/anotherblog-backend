@@ -10,7 +10,8 @@
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.27",
     "node-postgres": "^0.6.2",
-    "pg": "^8.11.0"
+    "pg": "^8.11.0",
+    "strapi-plugin-import-export-entries": "^1.21.0"
   },
   "name": "backend",
   "private": true,
